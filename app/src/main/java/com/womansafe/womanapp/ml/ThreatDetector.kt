@@ -11,7 +11,7 @@ class ThreatDetector(context: Context) {
 
     init {
         try {
-            val model = loadModelFile(context, "threat_model.tflite")
+            val model = loadModelFile(context, "cnn_model_balanced.tflite")
             interpreter = Interpreter(model)
         } catch (e: Exception) {
             e.printStackTrace()
