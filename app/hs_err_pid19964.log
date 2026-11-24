@@ -1,0 +1,277 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 132120576 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3926), pid=19964, tid=10328
+#
+# JRE version:  (21.0.10) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.10+-14961533-b1163.108, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Djava.awt.headless=true -Djava.library.path=D:\Android\Android studio files\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\imp_folder\Sdk\platform-tools;D:\imp_folder\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\athar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\athar\AppData\Local\Programs\Python\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\ProgramData\chocolatey\bin;D:\final_year_project\nvm;C:\nvm4w\nodejs;C:\Users\rutuj\AppData\Roaming\npm;C:\Users\rutuj\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\MinGW\bin;C:\msys64\ucrt64\bin;D:\vs code\ucrt64\bin;C:\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Git\cmd;D:\imp_folder\bin;C:\Program Files\WireGuard\;D:\Downloads\Anaconda3;D:\Downloads\Anaconda3\Library\mingw-w64\bin;D:\Downloads\Anaconda3\Library\usr\bin;D:\Downloads\Anaconda3\Library\bin;D:\Downloads\Anaconda3\Scripts;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\athar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.2\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;C:\Users\athar\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\tools\mysql\current\bin;C:\msys64\ucrt64\bin;C:\Users\athar\AppData\Local\atom\bin;C:\Users\athar\AppData\Roaming\npm;D:\Web Development\mongo db\mongo shell\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDB\Tools\100\bin;D:\Mongo DB\;C:\Users\athar\AppData\Local\GitHubDesktop\bin;C:\U-Dorg.gradle.internal.worker.tmpdir=D:\imp_folder\Womanapp\app\build\tmp\testDebugUnitTest\work --add-opens=java.base/java.io=ALL-UNNAMED -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=IN -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+
+Host: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz, 8 cores, 7G,  Windows 11 , 64 bit Build 22621 (10.0.22621.5415)
+Time: Sat Apr  4 16:05:57 2026 India Standard Time elapsed time: 0.012631 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000019e7e303960):  JavaThread "Unknown thread" [_thread_in_vm, id=10328, stack(0x0000009d35300000,0x0000009d35400000) (1024K)]
+
+Stack: [0x0000009d35300000,0x0000009d35400000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6d78a9]
+V  [jvm.dll+0x8665b3]
+V  [jvm.dll+0x868bde]
+V  [jvm.dll+0x8692c3]
+V  [jvm.dll+0x280ee6]
+V  [jvm.dll+0x6d4165]
+V  [jvm.dll+0x6c77fa]
+V  [jvm.dll+0x358f4b]
+V  [jvm.dll+0x360bc6]
+V  [jvm.dll+0x3b2ea6]
+V  [jvm.dll+0x3b3178]
+V  [jvm.dll+0x32b65c]
+V  [jvm.dll+0x32c34b]
+V  [jvm.dll+0x82f449]
+V  [jvm.dll+0x3c0078]
+V  [jvm.dll+0x8185e8]
+V  [jvm.dll+0x45449e]
+V  [jvm.dll+0x455c01]
+C  [jli.dll+0x52ab]
+C  [ucrtbase.dll+0x29333]
+C  [KERNEL32.DLL+0x1259d]
+C  [ntdll.dll+0x5af78]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff964f7b9c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000019e7fd20ec0 WorkerThread "GC Thread#0"                     [id=17024, stack(0x0000009d35400000,0x0000009d35500000) (1024K)]
+  0x0000019e7fd26830 ConcurrentGCThread "G1 Main Marker"            [id=3600, stack(0x0000009d35500000,0x0000009d35600000) (1024K)]
+  0x0000019e7fd27340 WorkerThread "G1 Conc#0"                       [id=17920, stack(0x0000009d35600000,0x0000009d35700000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff96476e637]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ff964fe87d0] Heap_lock - owner thread: 0x0000019e7e303960
+
+Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x00000000e0000000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+ Metaspace       used 0K, committed 0K, reserved 0K
+  class space    used 0K, committed 0K, reserved 0K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+
+Card table byte_map: [0x0000019e12a40000,0x0000019e12b40000] _byte_map_base: 0x0000019e12340000
+
+Marking Bits: (CMBitMap*) 0x0000019e7fd215d0
+ Bits: [0x0000019e12b40000, 0x0000019e13340000)
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.007 Loaded shared library D:\Android\Android studio files\jbr\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7f7d90000 - 0x00007ff7f7d9a000 	D:\Android\Android studio files\jbr\bin\java.exe
+0x00007ff9d61d0000 - 0x00007ff9d63e8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff9d5210000 - 0x00007ff9d52d4000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff9d3600000 - 0x00007ff9d39d3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff9d32e0000 - 0x00007ff9d33f1000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff9c3560000 - 0x00007ff9c3578000 	D:\Android\Android studio files\jbr\bin\jli.dll
+0x00007ff9bef40000 - 0x00007ff9bef5b000 	D:\Android\Android studio files\jbr\bin\VCRUNTIME140.dll
+0x00007ff9d5a70000 - 0x00007ff9d5c22000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff9d39e0000 - 0x00007ff9d3a06000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff9d5a20000 - 0x00007ff9d5a49000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff9d3c30000 - 0x00007ff9d3d4b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff9d3d50000 - 0x00007ff9d3dea000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff9bc990000 - 0x00007ff9bcc2c000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.6060_none_2712eda17382d24b\COMCTL32.dll
+0x00007ff9d5fa0000 - 0x00007ff9d6047000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff9d3e70000 - 0x00007ff9d3ea1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff9ca5d0000 - 0x00007ff9ca5dc000 	D:\Android\Android studio files\jbr\bin\vcruntime140_1.dll
+0x00007ff9a6e40000 - 0x00007ff9a6ecd000 	D:\Android\Android studio files\jbr\bin\msvcp140.dll
+0x00007ff964430000 - 0x00007ff9650c6000 	D:\Android\Android studio files\jbr\bin\server\jvm.dll
+0x00007ff9d3eb0000 - 0x00007ff9d3f61000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff9d5060000 - 0x00007ff9d5108000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff9d3a10000 - 0x00007ff9d3a38000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ff9d6050000 - 0x00007ff9d6168000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff9d5440000 - 0x00007ff9d54b1000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff9d2bb0000 - 0x00007ff9d2bfd000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ff9cd220000 - 0x00007ff9cd254000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff9c9d10000 - 0x00007ff9c9d1a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff9d2b90000 - 0x00007ff9d2ba3000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ff9d2280000 - 0x00007ff9d2298000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff9ca5b0000 - 0x00007ff9ca5ba000 	D:\Android\Android studio files\jbr\bin\jimage.dll
+0x00007ff9d0750000 - 0x00007ff9d0983000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff9d4260000 - 0x00007ff9d45f1000 	C:\WINDOWS\System32\combase.dll
+0x00007ff9d54c0000 - 0x00007ff9d5598000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff9cd190000 - 0x00007ff9cd1c2000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff9d3df0000 - 0x00007ff9d3e6b000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff9beb40000 - 0x00007ff9beb60000 	D:\Android\Android studio files\jbr\bin\java.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\Android\Android studio files\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.6060_none_2712eda17382d24b;D:\Android\Android studio files\jbr\bin\server
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Djava.library.path=D:\Android\Android studio files\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\imp_folder\Sdk\platform-tools;D:\imp_folder\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\athar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\athar\AppData\Local\Programs\Python\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\ProgramData\chocolatey\bin;D:\final_year_project\nvm;C:\nvm4w\nodejs;C:\Users\rutuj\AppData\Roaming\npm;C:\Users\rutuj\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\MinGW\bin;C:\msys64\ucrt64\bin;D:\vs code\ucrt64\bin;C:\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Git\cmd;D:\imp_folder\bin;C:\Program Files\WireGuard\;D:\Downloads\Anaconda3;D:\Downloads\Anaconda3\Library\mingw-w64\bin;D:\Downloads\Anaconda3\Library\usr\bin;D:\Downloads\Anaconda3\Library\bin;D:\Downloads\Anaconda3\Scripts;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\athar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.2\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;C:\Users\athar\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\tools\mysql\current\bin;C:\msys64\ucrt64\bin;C:\Users\athar\AppData\Local\atom\bin;C:\Users\athar\AppData\Roaming\npm;D:\Web Development\mongo db\mongo shell\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDB\Tools\100\bin;D:\Mongo DB\;C:\Users\athar\AppData\Local\GitHubDesktop\bin;C:\U-Dorg.gradle.internal.worker.tmpdir=D:\imp_folder\Womanapp\app\build\tmp\testDebugUnitTest\work --add-opens=java.base/java.io=ALL-UNNAMED -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=IN -Duser.language=en -Duser.variant -ea 
+java_command: worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+java_class_path (initial): D:\\gradle-cache\\caches\\9.3.1\\workerMain\\gradle-worker.jar;D:\\imp_folder\\Womanapp\\app\\build\\intermediates\\built_in_kotlinc\\debugUnitTest\\compileDebugUnitTestKotlin\\classes;D:\\imp_folder\\Womanapp\\app\\build\\intermediates\\java_res\\debugUnitTest\\processDebugUnitTestJavaRes\\out;D:\\imp_folder\\Womanapp\\app\\build\\intermediates\\runtime_app_classes_jar\\debug\\bundleDebugClassesToRuntimeJar\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\094598c04ba8116e24a4e14841647096\\workspace\\transformed\\jetified-junit-4.13.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b4f784094ba855cb6d532a0a3a4e70be\\workspace\\transformed\\jetified-maps-compose-6.1.2-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\28eefab72c1573f4eb1bda266f1f6903\\workspace\\transformed\\jetified-maps-ktx-5.1.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\2af0b33116153fa767e3a2557bd5748f\\workspace\\transformed\\jetified-play-services-maps-19.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\878f9059816931ca90946ffa534f40ea\\workspace\\transformed\\jetified-play-services-location-21.3.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\15384492e373bd20216e8e2442c622ec\\workspace\\transformed\\jetified-firebase-firestore-25.1.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\c5c799f18314795e3c2d0e4b403df975\\workspace\\transformed\\jetified-googleid-1.1.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\738b59e041d4346a605c8a4601aada3c\\workspace\\transformed\\jetified-firebase-auth-23.1.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5eb0eb70defcbfe2ef51b9a3f8586638\\workspace\\transformed\\jetified-credentials-1.3.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\bdfa8d0ba0bdec49ba5124c2e379a315\\workspace\\transformed\\jetified-credentials-play-services-auth-1.3.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a7f4074def6132d0b1be382f19efe5b6\\workspace\\transformed\\jetified-play-services-auth-21.1.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ce92924a70012888840b96a663985b44\\workspace\\transformed\\jetified-play-services-fido-21.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8af7db79c8b10d6e60e2a91ff974ce9c\\workspace\\transformed\\jetified-play-services-auth-api-phone-18.0.2-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\72889bf29bc75a86a20c3daa732a2552\\workspace\\transformed\\jetified-firebase-appcheck-interop-17.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a2f5dc8e123e8081e549d2feff5fb88f\\workspace\\transformed\\jetified-firebase-database-collection-18.0.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f87e4796d25cef73a22f43930b1fd18d\\workspace\\transformed\\jetified-play-services-auth-base-18.0.10-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\dad9e7ce07c6098a3fe2219937b27016\\workspace\\transformed\\jetified-play-services-base-18.5.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b13b117ed7c552ea838e3960b78f1490\\workspace\\transformed\\jetified-recaptcha-18.5.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a086d745a45b11acbeb69d6dbbbc596d\\workspace\\transformed\\jetified-integrity-1.3.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ea43d8ab2d6b3b3fa5c3ddbcbc459158\\workspace\\transformed\\jetified-firebase-auth-interop-20.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\65a57d41377d8b61558d59ca5c03984e\\workspace\\transformed\\jetified-firebase-common-ktx-21.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\6d31b30f277e08843a10ab28ae80ff4b\\workspace\\transformed\\jetified-firebase-common-21.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\7061aac1f3fd086aa33885d4f94e7352\\workspace\\transformed\\jetified-material3-adaptive-navigation-suite-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5213d04790c1c109a3905cd567a82472\\workspace\\transformed\\jetified-material3-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4295099c8e36f6b33a1b0795f74d745a\\workspace\\transformed\\jetified-material-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a7eb8171fdf1ae41b2a3def10f2ddd5d\\workspace\\transformed\\jetified-animation-core-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f4f093c9f871dbd88cdd4e683970b834\\workspace\\transformed\\jetified-material-ripple-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\dfb78b75f48670450526cfbc47239922\\workspace\\transformed\\jetified-animation-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d1d3c9075e8f096aa881b401c649a12c\\workspace\\transformed\\jetified-foundation-layout-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\20ccb9290da7c66437527e642324dd20\\workspace\\transformed\\jetified-adaptive-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1113fe00c6951dddf976c9bae1fa5f3f\\workspace\\transformed\\jetified-foundation-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f0cf73ecf0588bb2a21b890533647e4e\\workspace\\transformed\\jetified-ui-tooling-data-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b3669aeb8fd7ff1079d0692cadb70cc9\\workspace\\transformed\\jetified-ui-unit-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\260ee2c54b450036c3e20dc720a7aaaf\\workspace\\transformed\\jetified-ui-geometry-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\bb70eec57e5cfc5fcb2085a328116314\\workspace\\transformed\\jetified-ui-util-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\dbff65211af0535bbf557efd3bf6d541\\workspace\\transformed\\jetified-ui-text-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8c11ba4ae317b24c3b6c72552aa75be6\\workspace\\transformed\\jetified-ui-tooling-preview-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d137b9c93cc41565c2385a4b91aeb1b0\\workspace\\transformed\\jetified-ui-tooling-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\513813136c8e8f6c7c615198198c5ec6\\workspace\\transformed\\jetified-ui-graphics-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b7d76ec6ccca58a75212ee94de13d4c8\\workspace\\transformed\\jetified-material-icons-core-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\46d0dadeafda3552604599350aba7613\\workspace\\transformed\\jetified-ui-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4b30eb36a2a8c72a1ad46cee63bc36e3\\workspace\\transformed\\jetified-ui-test-manifest-1.7.6-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3476bc02e0026a178a9717cfa14f3770\\workspace\\transformed\\fragment-1.5.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\410476d029435400b14703a7fdae4b55\\workspace\\transformed\\jetified-activity-1.9.3-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\7200e80e067c81c4ca2d92e7a2119eeb\\workspace\\transformed\\jetified-activity-compose-1.9.3-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\75c47cbeabf165ae07939e37dbefa2b8\\workspace\\transformed\\jetified-activity-ktx-1.9.3-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\537ef8a98dc76a931bda5ced826a5c38\\workspace\\transformed\\jetified-savedstate-ktx-1.2.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\53a5f2a2ca2d8c31fe1408ff1b923a42\\workspace\\transformed\\jetified-savedstate-1.2.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\da2eae44e1c483af13122f0ad94bd055\\workspace\\transformed\\loader-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b082bbb113504c8bd194a21bdc7c91d4\\workspace\\transformed\\jetified-emoji2-1.3.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\99f990642f6df4091fb900b04fc69a4f\\workspace\\transformed\\jetified-lifecycle-livedata-core-ktx-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8822cde3b3779ceaa221ebc4b5456e76\\workspace\\transformed\\jetified-lifecycle-process-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5a43432d506e1990a1692195dc9d89dd\\workspace\\transformed\\lifecycle-livedata-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8d51bddbfc854e4b00d682f029f063f9\\workspace\\transformed\\jetified-lifecycle-common-jvm-2.8.7.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\0e6c62b81b4250dc532a11c23a2c4480\\workspace\\transformed\\jetified-lifecycle-runtime-compose-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\2e3daac02846074d6c4a421451a45c35\\workspace\\transformed\\lifecycle-livedata-core-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\modules-2\\files-2.1\\androidx.lifecycle\\lifecycle-common-java8\\2.8.7\\2ad14aed781c4a73ed4dbb421966d408a0a06686\\lifecycle-common-java8-2.8.7.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3c86267a2057ab45e49213567d9cdcd9\\workspace\\transformed\\jetified-lifecycle-viewmodel-savedstate-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\7a09987c0b453c85222b94d4123d681f\\workspace\\transformed\\lifecycle-viewmodel-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\0ac680e34b878916c6e886d445f4db67\\workspace\\transformed\\jetified-lifecycle-viewmodel-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\29a542e45407ffef499e2f2368d06079\\workspace\\transformed\\jetified-lifecycle-runtime-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\fdfa3e12952fd9326875124a7df7e480\\workspace\\transformed\\jetified-lifecycle-viewmodel-ktx-2.8.7-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a6db665d4d8d0638b0cb9dfbe7633d86\\workspace\\transformed\\jetified-lifecycle-runtime-ktx-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\440151872b4634280843d4f2b951684f\\workspace\\transformed\\jetified-window-core-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3be80764860ce2c3da7613dc39e71d76\\workspace\\transformed\\jetified-window-1.3.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4b69744df1a30e639f527c0ed5d6759b\\workspace\\transformed\\jetified-runtime-saveable-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b2a0fba12cf9835a4905a34454871ae6\\workspace\\transformed\\jetified-runtime-release-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d4bcbe45c7ad1d9a11b6cb551596427a\\workspace\\transformed\\jetified-kotlinx-coroutines-android-1.8.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f938f7621b4deb1ed231d97c56974167\\workspace\\transformed\\jetified-kotlinx-coroutines-core-jvm-1.8.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ddc73282724b15eff6957252989851bb\\workspace\\transformed\\jetified-kotlinx-coroutines-play-services-1.8.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\fc0a0133d58edc653a1523cb06b5fd78\\workspace\\transformed\\jetified-play-services-tasks-18.2.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\6bc28bfa0d24a20527a788d71d62278c\\workspace\\transformed\\jetified-play-services-basement-18.4.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b498fb9ff9a5a2350fb324c249ac9e54\\workspace\\transformed\\browser-1.4.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\adaa2737883f9c3d62342fb8cd335014\\workspace\\transformed\\jetified-autofill-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\dbb8ba29bb829a97893732262e542c49\\workspace\\transformed\\jetified-graphics-path-1.0.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\465fb2279c18bc5a8eb6e3b4eb10583a\\workspace\\transformed\\viewpager-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4502e8e1d2a75bf2fb1a461bc231f2d5\\workspace\\transformed\\customview-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\854d40e5740a8bbbea4858f4bf99a5b3\\workspace\\transformed\\core-1.15.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\38d656e4de5e20ff77836fcfc0cfaf01\\workspace\\transformed\\jetified-customview-poolingcontainer-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4995ce10a5baaa3c558afc17c203b8c3\\workspace\\transformed\\jetified-core-ktx-1.15.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b0f92ae9a4e555a0bcf7a92c672ef83a\\workspace\\transformed\\interpolator-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4c0c2f6665eeaa2d3ce38b9ca0f0564a\\workspace\\transformed\\jetified-profileinstaller-1.3.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\aab6e831b0eafa082852b5bba7590f11\\workspace\\transformed\\jetified-startup-runtime-1.1.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5099d198b425d3775a5d55bed82c2ca2\\workspace\\transformed\\jetified-tracing-1.2.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1fb87b19d07897a06373fe6c4b8cabcf\\workspace\\transformed\\versionedparcelable-1.1.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ad23f449409e69bee6c3fd8ae342a185\\workspace\\transformed\\localbroadcastmanager-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\813681b4d53c42ecd0da27bd183a49d0\\workspace\\transformed\\jetified-firebase-components-18.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\9f43a16e676533d567c1e3a2530cc71a\\workspace\\transformed\\jetified-viewbinding-8.4.2-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\57d037ea8da767a6c696b78ecb26cf38\\workspace\\transformed\\jetified-concurrent-futures-1.1.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\7efe98a43069d416c3c9eda4d0b803d6\\workspace\\transformed\\core-runtime-2.2.0-runtime.jar;D:\\gradle-cache\\caches\\modules-2\\files-2.1\\androidx.arch.core\\core-common\\2.2.0\\5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3\\core-common-2.2.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\411253e226f4b73c4730a4dfe1ceebbf\\workspace\\transformed\\jetified-collection-ktx-1.4.4.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\0fe7d55efb68c4296b1d1436f08db6c4\\workspace\\transformed\\jetified-collection-jvm-1.4.4.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\be6af5c4c3b82673849b81bc5d802622\\workspace\\transformed\\jetified-core-1.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d902ad362d19f38377dc9bf6985062c4\\workspace\\transformed\\jetified-annotation-jvm-1.8.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ff287ef7795cbebd22a764ff63af4fb4\\workspace\\transformed\\jetified-annotation-experimental-1.4.1-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4ef6d9b89bbf1778190e2ec3aa448804\\workspace\\transformed\\jetified-grpc-okhttp-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\16752afd2bc167b67dad306aba8a47af\\workspace\\transformed\\jetified-okio-jvm-3.4.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4ee9374cdf1960abe79342ff01d30e58\\workspace\\transformed\\jetified-kotlin-stdlib-jdk8-1.8.22.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1f9ee41571b76ac119f24cf01bf314fa\\workspace\\transformed\\jetified-kotlin-stdlib-jdk7-2.0.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\9c7519c2fe37a7cc5c3550ca38be9149\\workspace\\transformed\\jetified-kotlin-stdlib-2.2.10.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\707980eae5ef86070d42ef99b8646a84\\workspace\\transformed\\jetified-hamcrest-core-1.3.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\0873f4fccadd4aa3f687463ed9c2b1c5\\workspace\\transformed\\jetified-annotations-23.0.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\aefa6dac9de31b6ec71462e5f1bf2b9c\\workspace\\transformed\\jetified-firebase-annotations-16.2.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5fde4f809e97a4d82154b86b68bcbbb8\\workspace\\transformed\\jetified-protolite-well-known-types-18.0.0-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1259d3db90237cb3a007c52acea84697\\workspace\\transformed\\jetified-grpc-android-1.62.2-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3fec6710136f9d98a9da07d58188161a\\workspace\\transformed\\jetified-grpc-protobuf-lite-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\0e5ac8d8c219c9da7e7366f39743eeb3\\workspace\\transformed\\jetified-grpc-stub-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\724c78c26cba8b871fb8c02e47c66b6d\\workspace\\transformed\\jetified-grpc-util-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\44750c405064ebb4f63e7f7490975a79\\workspace\\transformed\\jetified-grpc-core-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\97fa240a51cf79c93673e3a27513521e\\workspace\\transformed\\jetified-grpc-context-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\e0ebfc5780a30fe60841f8b5044c473b\\workspace\\transformed\\jetified-grpc-api-1.62.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1d88c0ff04bbf27b599a3200b092ddbf\\workspace\\transformed\\jetified-guava-32.1.3-android.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5d8569b242c707ada6dcbfab16c4e18d\\workspace\\transformed\\jetified-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\e7f0f82f2b33c1d6ba85b50856b794cd\\workspace\\transformed\\jetified-core-common-2.0.3-runtime.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a0d12ee62a4e9f4ec00d00c029a8a06f\\workspace\\transformed\\jetified-javax.inject-1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\24602f77ef768728a297f1598dff42ef\\workspace\\transformed\\jetified-error_prone_annotations-2.26.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d83ba307206b7b2bdf4bd683bca87242\\workspace\\transformed\\jetified-protobuf-javalite-3.25.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\64ede8299a9381f8fdcb9b12fac37a17\\workspace\\transformed\\jetified-perfmark-api-0.26.0.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\2fbcb4a8f16b36615c7697aec6db0291\\workspace\\transformed\\jetified-jsr305-3.0.2.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\76251e934d17f2fc5dfb85bc4d816cc3\\workspace\\transformed\\jetified-gson-2.10.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\59b0d541a2cf834df6a8c9bc5f1b3aba\\workspace\\transformed\\jetified-annotations-4.1.1.4.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\538b0b1099700e87712090a2463456d3\\workspace\\transformed\\jetified-animal-sniffer-annotations-1.23.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\99aad1bf5317941767df72682d997f8b\\workspace\\transformed\\jetified-failureaccess-1.0.1.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\65f2239cef1702bb7f2c1ac18303d685\\workspace\\transformed\\jetified-checker-qual-3.37.0.jar;D:\\imp_folder\\Womanapp\\app\\build\\intermediates\\java_res\\debug\\processDebugJavaRes\\out;D:\\gradle-cache\\caches\\9.3.1\\transforms\\dae008cfff3bb90c1e450286d7bd6577\\workspace\\transformed\\jetified-maps-compose-6.1.2\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\08953f628b72b460fedcab1eceb26707\\workspace\\transformed\\jetified-maps-ktx-5.1.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d57c702e488a6f83e5d3cdb2ca4c0410\\workspace\\transformed\\jetified-play-services-maps-19.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d043714e82a71194a219ed9be904ceda\\workspace\\transformed\\jetified-play-services-location-21.3.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\7436385723c96d6e057eab90ad7b463e\\workspace\\transformed\\jetified-firebase-firestore-25.1.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f24b5d6fcda773c4d158546083496672\\workspace\\transformed\\jetified-googleid-1.1.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\c43713062665911bdf876359898aaf01\\workspace\\transformed\\jetified-firebase-auth-23.1.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ab93f14539c66fd541fb042323513f38\\workspace\\transformed\\jetified-credentials-1.3.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f7f17a76d43726f87d6075a3caad17eb\\workspace\\transformed\\jetified-credentials-play-services-auth-1.3.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\78c64e509a0d3a3c3b356c3001d45b06\\workspace\\transformed\\jetified-play-services-auth-21.1.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5ff2886177f6e7439518b2b8fb67737d\\workspace\\transformed\\jetified-play-services-fido-21.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d4146a31c3d0c1a084dd7479452cce86\\workspace\\transformed\\jetified-play-services-auth-api-phone-18.0.2\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3b7ada52464d908d9dddaefdd355d35d\\workspace\\transformed\\jetified-firebase-appcheck-interop-17.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\86c932b3c60a76d60257b380c6f9b71f\\workspace\\transformed\\jetified-firebase-database-collection-18.0.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\70d1d2f46b6190f1c33c7c87e735228a\\workspace\\transformed\\jetified-play-services-auth-base-18.0.10\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\615083126e56690b79f61a25f7b54cf1\\workspace\\transformed\\jetified-play-services-base-18.5.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8d3a4085ddba549c91efcf262c8e9aad\\workspace\\transformed\\jetified-recaptcha-18.5.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\359c27385fc8a4fd34b781e264a0865e\\workspace\\transformed\\jetified-integrity-1.3.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\72f9eeb5a1ddc60bb68215ec034174ff\\workspace\\transformed\\jetified-firebase-auth-interop-20.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\71e8e30ee63fa94cefdd1fe9a6666bd8\\workspace\\transformed\\jetified-firebase-common-ktx-21.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\f5d03f681510c0c5dc8760c5e26a711a\\workspace\\transformed\\jetified-firebase-common-21.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ed483869d6488f66bd779745d31219c7\\workspace\\transformed\\jetified-material3-adaptive-navigation-suite-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4ccc66785683a0b5ea86d466c95044ce\\workspace\\transformed\\jetified-material3-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\46bbe1ea52edd9f6b8155954119507eb\\workspace\\transformed\\jetified-material-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\c05970f09cf5e5ced8739b536a184ef8\\workspace\\transformed\\jetified-animation-core-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3b393ae12f6f3d81c3185eb6d70e564e\\workspace\\transformed\\jetified-material-ripple-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\e4574662d84235a21f2b7bb70fb5304f\\workspace\\transformed\\jetified-animation-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\9ec6543c78345112cd44e37db8c31e0b\\workspace\\transformed\\jetified-foundation-layout-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\c0ed260baaf906055801b07b1d41d900\\workspace\\transformed\\jetified-adaptive-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4bf102045fbf23d33919860a2350b854\\workspace\\transformed\\jetified-foundation-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d00f5a1a0f75f0e569e528b1fc1e8837\\workspace\\transformed\\jetified-ui-tooling-data-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8662bef7ae69f81af45045693e1a33b1\\workspace\\transformed\\jetified-ui-unit-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\70d52569812fcf0f74f442544a8d8e8c\\workspace\\transformed\\jetified-ui-geometry-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a74e4a15b5aff416eb823e127d4ddd23\\workspace\\transformed\\jetified-ui-util-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\2c8ae9a9aaf4e693a0ec8d27aa4e808e\\workspace\\transformed\\jetified-ui-text-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\7cfb0eb880d067106782e812c01f7392\\workspace\\transformed\\jetified-ui-tooling-preview-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\6611c0f6743d338640dc83d7a50d294f\\workspace\\transformed\\jetified-ui-tooling-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\fa5923f6c9045021ebf6c5fb46ff2d6f\\workspace\\transformed\\jetified-ui-graphics-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\89f91467083637c9f66f6bf731d010cb\\workspace\\transformed\\jetified-material-icons-core-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\40f69249cf0f3f1312d10d6fdaf110fa\\workspace\\transformed\\jetified-ui-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ce6fb96f3cdbc7913ceaa09534cc19c0\\workspace\\transformed\\jetified-ui-test-manifest-1.7.6\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\2192845a9dbdf9ea6140ed890908dd31\\workspace\\transformed\\fragment-1.5.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\e39143e0557e0f3f2a20eaab0071d0b7\\workspace\\transformed\\jetified-activity-1.9.3\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b6ceccbf9a2d2255b257e143ba3bfba1\\workspace\\transformed\\jetified-activity-compose-1.9.3\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\9c7a74ae0e6e4d1aeb3476476b418f01\\workspace\\transformed\\jetified-activity-ktx-1.9.3\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\238d31c9ff5d2b53b8ef2c994e4337f5\\workspace\\transformed\\jetified-savedstate-ktx-1.2.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\9bf6d9b965473e2780b743548b2a0870\\workspace\\transformed\\jetified-savedstate-1.2.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ed9ac7ed9a782b7443301648eb70fb46\\workspace\\transformed\\loader-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\df5f70cd9bc732a98c43e2bfeaf73d30\\workspace\\transformed\\jetified-emoji2-1.3.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\df5f70cd9bc732a98c43e2bfeaf73d30\\workspace\\transformed\\jetified-emoji2-1.3.0\\jars\\libs\\repackaged.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\24f3da3c20f8ee4bd9a8f5c44c4e01f7\\workspace\\transformed\\jetified-lifecycle-livedata-core-ktx-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\50d56750927eae75ef5a5b68647c87e9\\workspace\\transformed\\jetified-lifecycle-process-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\335de2ec36ccf2d35fd1efafa20bb1c7\\workspace\\transformed\\lifecycle-livedata-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\13dda49f103e985f454e2e311d163cd8\\workspace\\transformed\\jetified-lifecycle-runtime-compose-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b5b2b3a7ca70858e5c42576475a93750\\workspace\\transformed\\lifecycle-livedata-core-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\ccf9a62d8c8c5e5fc749cb22b57c8743\\workspace\\transformed\\jetified-lifecycle-viewmodel-savedstate-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\8fb4dcf8dd9cda7bcadcdbf18199a9fb\\workspace\\transformed\\lifecycle-viewmodel-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\037f1a3fbad1ff3edc188019788366c3\\workspace\\transformed\\jetified-lifecycle-viewmodel-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\474586b2b194ef1c8d08089bf9f6777c\\workspace\\transformed\\jetified-lifecycle-runtime-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\670c1d24803c8efa16347fe2a41a71b5\\workspace\\transformed\\jetified-lifecycle-viewmodel-ktx-2.8.7\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1fd7cef82204134b9056b7ec6f9c82e5\\workspace\\transformed\\jetified-lifecycle-runtime-ktx-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\bd23adc1bc385246d6c29d98120a04d5\\workspace\\transformed\\jetified-window-core-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\b072a3ff3c8b26c342ac10220f430c65\\workspace\\transformed\\jetified-window-1.3.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5bd83275fc069223c2dacf37fa6edb70\\workspace\\transformed\\jetified-runtime-saveable-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\a6aade0661a13259ed361e47d809f37c\\workspace\\transformed\\jetified-runtime-release\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5a79bc7999977b70f7cd19fa288cb76f\\workspace\\transformed\\jetified-play-services-tasks-18.2.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\545d07ec805525506054f2c11af798ed\\workspace\\transformed\\jetified-play-services-basement-18.4.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1f2338c3e2c73bdd7f52cbf89076122b\\workspace\\transformed\\browser-1.4.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\d70c6a59fb637e6e59c1ded372040017\\workspace\\transformed\\jetified-autofill-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\89f3a4b8c4132df52084de4b4559f82f\\workspace\\transformed\\jetified-graphics-path-1.0.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\25f076a8bf3250a5067e4a3d4fad438c\\workspace\\transformed\\viewpager-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\bae3cc5932cadd1cb9b9fef870b45ea4\\workspace\\transformed\\customview-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\61a8a48ddc10976988e31e9802e6e0c6\\workspace\\transformed\\core-1.15.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\e11cabd5ee0201467b7e0889471f2da8\\workspace\\transformed\\jetified-customview-poolingcontainer-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3c3d59fb3dedac68d39126c0b62fea02\\workspace\\transformed\\jetified-core-ktx-1.15.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\2ce342c17adcba6719ebbde7daef066e\\workspace\\transformed\\interpolator-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\254776d1fc569c19db42cf98851c1fa5\\workspace\\transformed\\jetified-profileinstaller-1.3.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1529ad264b7202627a367acf6a884e27\\workspace\\transformed\\jetified-startup-runtime-1.1.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\0685698d78f8b73718eab9cd15f5c0f6\\workspace\\transformed\\jetified-tracing-1.2.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\4a07c4b5622f112dc55da2421e64c2b5\\workspace\\transformed\\versionedparcelable-1.1.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5c911bbe400c5b5670e1dda38d24028d\\workspace\\transformed\\localbroadcastmanager-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\27f7bb721ee61e4fdec77dd3a8ba555a\\workspace\\transformed\\jetified-firebase-components-18.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1512a3319c4693e8d8458e73095c5d33\\workspace\\transformed\\jetified-viewbinding-8.4.2\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\339b38377ad4113a1e6eeef27a874cc2\\workspace\\transformed\\core-runtime-2.2.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\e51809aad1d32680b86e3e52b9b0d525\\workspace\\transformed\\jetified-core-1.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\1ead459ba1e2298ecf9a7b404ad72e23\\workspace\\transformed\\jetified-annotation-experimental-1.4.1\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\3a78f89eec57256d1169be825cfd14c3\\workspace\\transformed\\jetified-protolite-well-known-types-18.0.0\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\db325e9aa2fd39bddd0a21adbaf4156c\\workspace\\transformed\\jetified-grpc-android-1.62.2\\jars\\classes.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\5d71d93dadd859d4d9391f41594c8159\\workspace\\transformed\\jetified-core-common-2.0.3\\jars\\classes.jar;D:\\imp_folder\\Womanapp\\app\\build\\intermediates\\compile_and_runtime_r_class_jar\\debug\\processDebugResources\\R.jar;D:\\gradle-cache\\caches\\9.3.1\\transforms\\64dd7b8827b173f3efcfd0488486963b\\workspace\\transformed\\android.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 132120576                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 536870912                                 {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 536870912                              {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+JAVA_HOME=D:\imp_folder
+PATH=D:\imp_folder\Sdk\platform-tools;D:\imp_folder\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\athar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\athar\AppData\Local\Programs\Python\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\ProgramData\chocolatey\bin;D:\final_year_project\nvm;C:\nvm4w\nodejs;C:\Users\rutuj\AppData\Roaming\npm;C:\Users\rutuj\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\MinGW\bin;C:\msys64\ucrt64\bin;D:\vs code\ucrt64\bin;C:\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Git\cmd;D:\imp_folder\bin;C:\Program Files\WireGuard\;D:\Downloads\Anaconda3;D:\Downloads\Anaconda3\Library\mingw-w64\bin;D:\Downloads\Anaconda3\Library\usr\bin;D:\Downloads\Anaconda3\Library\bin;D:\Downloads\Anaconda3\Scripts;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\athar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.2\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;C:\Users\athar\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\tools\mysql\current\bin;C:\msys64\ucrt64\bin;C:\Users\athar\AppData\Local\atom\bin;C:\Users\athar\AppData\Roaming\npm;D:\Web Development\mongo db\mongo shell\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDB\Tools\100\bin;D:\Mongo DB\;C:\Users\athar\AppData\Local\GitHubDesktop\bin;C:\Users\athar\AppData\Local\Programs\Ollama;cd C:\Users\athar\AppData\Local\Programs\Ollama;D:\Work Important;D:\Downloads\Microsoft VS Code\bin;D:\final_year_project\nvm;C:\nvm4w\nodejs;D:\imp_folder\platform-tools\;
+USERNAME=athar
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+TMP=D:\TMP
+TEMP=D:\TEMP\Temp\Temp
+
+
+
+
+Periodic native trim disabled
+
+JNI global refs:
+JNI global refs: 0, weak refs: 0
+
+JNI global refs memory usage: 0, weak refs: 0
+
+Process memory usage:
+Resident Set Size: 11768K (0% of 8166712K total physical memory with 975040K free physical memory)
+
+OOME stack traces (most recent first):
+Classloader memory used:
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.5415)
+OS uptime: 0 days 5:19 hours
+Hyper-V role detected
+
+CPU: total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 140 stepping 1 microcode 0x8a, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, avx512f, avx512dq, avx512cd, avx512bw, avx512vl, sha, fma, vzeroupper, avx512_vpopcntdq, avx512_vpclmulqdq, avx512_vaes, avx512_vnni, clflush, clflushopt, clwb, avx512_vbmi2, avx512_vbmi, hv, rdtscp, rdpid, fsrm, gfni, avx512_bitalg, f16c, cet_ibt, cet_ss, avx512_ifma
+Processor Information for processor 0
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 1
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 2
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 3
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 4
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 5
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+Processor Information for processor 6
+  Max Mhz: 2419, Current Mhz: 1209, Mhz Limit: 2419
+Processor Information for processor 7
+  Max Mhz: 2419, Current Mhz: 2419, Mhz Limit: 2419
+
+Memory: 4k page, system-wide physical 7975M (952M free)
+TotalPageFile size 13487M (AvailPageFile size 117M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 59M, peak: 185M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.10+-14961533-b1163.108) for windows-amd64 JRE (21.0.10+-14961533-b1163.108), built on 2026-03-02T19:58:50Z by "builder" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.
